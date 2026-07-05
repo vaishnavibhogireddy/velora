@@ -1,11 +1,16 @@
 import './App.css';
 
+import Navbar from './components/Navbar';
+import LandingPage from './pages/LandingPage';
+import Footer from './components/Footer';
+
 function App() {
   return (
-    <div className="app">
-      <h1>Welcome to Velora</h1>
-      <p>AI-Powered Nutrition & Wellness Platform</p>
-    </div>
+    <>
+      <Navbar />
+      <LandingPage />
+      <Footer />
+    </>
   );
 }
 

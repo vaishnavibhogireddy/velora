@@ -1,19 +1,28 @@
+import "../styles/navbar.css";
+
 function Navbar() {
   return (
-    <nav>
-      <h2>Velora</h2>
+    <nav className="navbar">
 
-      <ul>
+      <div className="logo">
+        Velora
+      </div>
+
+      <ul className="nav-links">
         <li>Home</li>
         <li>Features</li>
         <li>About</li>
         <li>Contact</li>
       </ul>
 
-      <div>
-        <button>Login</button>
-        <button>Register</button>
+      <div className="nav-buttons">
+        <button className="login-btn">Login</button>
+
+        <button className="register-btn">
+          Register
+        </button>
       </div>
+
     </nav>
   );
 }

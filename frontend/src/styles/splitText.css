@@ -1,0 +1,30 @@
+.split-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.split-word {
+    display: inline-block;
+}
+.hero-title {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+.hero-title .split-text {
+
+    font-size: 64px;
+
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    color: #166534;
+
+}

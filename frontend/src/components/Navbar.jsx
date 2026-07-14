@@ -1,7 +1,8 @@
 import "../styles/navbar.css";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <nav className="navbar">
       <motion.div
@@ -90,6 +91,7 @@ function Navbar() {
         </Link>
         <motion.button
           className="register-btn"
+          onClick={() => navigate("/register")}
           whileHover={{
             scale: 1.05,
             y: -4,

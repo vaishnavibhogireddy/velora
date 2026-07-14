@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login";
-
+import Register from "./pages/Register";
 function Home() {
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
   );
 }

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/login.css";
 import { MdEmail } from "react-icons/md";
 import { FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
   return (
@@ -56,11 +57,13 @@ export default function Login() {
             <span></span>
           </div>
 
-          <button className="google-btn">Continue with Google</button>
-
-          <p className="register-link">
+          <button className="google-btn">
+            <FcGoogle className="google-icon" />
+            Continue with Google
+          </button>
+          <p className="bottom-text">
             Don't have an account?
-            <span> Register</span>
+            <Link to="/register">Register</Link>
           </p>
         </div>
       </div>
